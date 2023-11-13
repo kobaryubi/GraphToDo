@@ -11,6 +11,7 @@
 		2C37CD2E2B00CE410020630D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37CD2D2B00CE410020630D /* ContentView.swift */; };
 		2C37CD302B00CE420020630D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C37CD2F2B00CE420020630D /* Assets.xcassets */; };
 		2C37CD332B00CE420020630D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C37CD322B00CE420020630D /* Preview Assets.xcassets */; };
+		2C8E97BF2B0102F9006B4271 /* ScatterChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E97BE2B0102F9006B4271 /* ScatterChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2C37CD2D2B00CE410020630D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C37CD2F2B00CE420020630D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C37CD322B00CE420020630D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C8E97BE2B0102F9006B4271 /* ScatterChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatterChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		2C37CD2A2B00CE410020630D /* GraphToDo */ = {
 			isa = PBXGroup;
 			children = (
+				2C8E97BB2B010085006B4271 /* Views */,
 				2C37CD2B2B00CE410020630D /* GraphToDoApp.swift */,
 				2C37CD2D2B00CE410020630D /* ContentView.swift */,
 				2C37CD2F2B00CE420020630D /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				2C37CD322B00CE420020630D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C8E97BB2B010085006B4271 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C8E97BE2B0102F9006B4271 /* ScatterChartView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C37CD2E2B00CE410020630D /* ContentView.swift in Sources */,
+				2C8E97BF2B0102F9006B4271 /* ScatterChartView.swift in Sources */,
 				2C37CD2C2B00CE410020630D /* GraphToDoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
