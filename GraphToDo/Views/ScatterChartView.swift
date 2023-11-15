@@ -6,10 +6,46 @@
 //
 
 import SwiftUI
+import Charts
 
 struct ScatterChartView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Chart{
+            PointMark(
+                x: .value("Important", -20),
+                y: .value("Priority", -20)
+            )
+            PointMark(
+                x: .value("Important", -10),
+                y: .value("Priority", -10)
+            )
+            PointMark(
+                x: .value("Important", 0),
+                y: .value("Priority", 0)
+            )
+            PointMark(
+                x: .value("Important", 10),
+                y: .value("Priority", 10)
+            )
+            PointMark(
+                x: .value("Important", 20),
+                y: .value("Priority", 20)
+            )
+        }
+        .chartXAxis {
+            AxisMarks(
+                values: [0]
+            ) {
+                AxisGridLine()
+            }
+        }
+        .chartYAxis {
+            AxisMarks(
+                values: [0]
+            ) {
+                AxisGridLine()
+            }
+        }
     }
 }
 
