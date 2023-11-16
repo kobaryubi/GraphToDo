@@ -20,9 +20,14 @@ struct ToDosView: View {
             }
             .navigationTitle("Graph ToDo")
             .toolbar{
-                Button(action: {}) {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink {
+                        ToDoCreateView()
+                    } label: {
                     Image(systemName: "plus")
-                }.accessibilityLabel("New ToDo")
+                        .accessibilityLabel("New ToDo")
+                    }
+                }
             }
         }
     }
