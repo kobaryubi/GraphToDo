@@ -9,12 +9,20 @@ import SwiftUI
 
 struct ToDosView: View {
     var body: some View {
-        VStack {
-            ScatterChartView()
-            List {
-                ToDoCardView()
-                ToDoCardView()
-                ToDoCardView()
+        NavigationStack {
+            VStack {
+                ScatterChartView()
+                List {
+                    ToDoCardView()
+                    ToDoCardView()
+                    ToDoCardView()
+                }
+            }
+            .navigationTitle("Graph ToDo")
+            .toolbar{
+                Button(action: {}) {
+                    Image(systemName: "plus")
+                }.accessibilityLabel("New ToDo")
             }
         }
     }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C37CD2C2B00CE410020630D /* GraphToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37CD2B2B00CE410020630D /* GraphToDoApp.swift */; };
-		2C37CD2E2B00CE410020630D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37CD2D2B00CE410020630D /* ContentView.swift */; };
 		2C37CD302B00CE420020630D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C37CD2F2B00CE420020630D /* Assets.xcassets */; };
 		2C37CD332B00CE420020630D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C37CD322B00CE420020630D /* Preview Assets.xcassets */; };
 		2C8E97BF2B0102F9006B4271 /* ScatterChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E97BE2B0102F9006B4271 /* ScatterChartView.swift */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		2C37CD282B00CE410020630D /* GraphToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C37CD2B2B00CE410020630D /* GraphToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphToDoApp.swift; sourceTree = "<group>"; };
-		2C37CD2D2B00CE410020630D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C37CD2F2B00CE420020630D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C37CD322B00CE420020630D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C8E97BE2B0102F9006B4271 /* ScatterChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatterChartView.swift; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 			children = (
 				2C8E97BB2B010085006B4271 /* Views */,
 				2C37CD2B2B00CE410020630D /* GraphToDoApp.swift */,
-				2C37CD2D2B00CE410020630D /* ContentView.swift */,
 				2C37CD2F2B00CE420020630D /* Assets.xcassets */,
 				2C37CD312B00CE420020630D /* Preview Content */,
 			);
@@ -155,7 +152,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA7DA142B0594E800E28B33 /* ToDoCardView.swift in Sources */,
-				2C37CD2E2B00CE410020630D /* ContentView.swift in Sources */,
 				2C8E97BF2B0102F9006B4271 /* ScatterChartView.swift in Sources */,
 				2C37CD2C2B00CE410020630D /* GraphToDoApp.swift in Sources */,
 				2CA7DA162B05AC2A00E28B33 /* ToDosView.swift in Sources */,
