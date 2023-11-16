@@ -11,7 +11,7 @@ import SwiftUI
 struct GraphToDoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ToDosView()
         }
     }
 }
