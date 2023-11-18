@@ -22,7 +22,7 @@ struct ToDosView: View {
             .toolbar{
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink {
-                        ToDoCreateView()
+                        TodoCreateView()
                     } label: {
                     Image(systemName: "plus")
                         .accessibilityLabel("New ToDo")
