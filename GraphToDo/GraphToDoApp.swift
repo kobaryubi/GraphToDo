@@ -11,7 +11,8 @@ import SwiftUI
 struct GraphToDoApp: App {
     var body: some Scene {
         WindowGroup {
-            ToDosView()
+            TodosView()
+                .environmentObject(NavigationModel())
         }
     }
 }

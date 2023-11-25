@@ -1,5 +1,5 @@
 //
-//  ToDoCardView.swift
+//  TodoCardView.swift
 //  GraphToDo
 //
 //  Created by Masahiko Kobayashi on 2023/11/16.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct ToDoCardView: View {
+struct TodoCardView: View {
+    @EnvironmentObject var navigationModel: NavigationModel
+    
     var body: some View {
         HStack(spacing: 8) {
             Button(action: {}) {
@@ -23,5 +25,5 @@ struct ToDoCardView: View {
 }
 
 #Preview {
-    ToDoCardView()
+    TodoCardView()
 }
