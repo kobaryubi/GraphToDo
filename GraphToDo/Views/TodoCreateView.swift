@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TodoCreateView: View {
+    @EnvironmentObject var navigationModel: NavigationModel
     @State private var todo: TodoInput = TodoInput()
     
     var body: some View {
@@ -16,7 +17,9 @@ struct TodoCreateView: View {
                 TextField("Title", text: $todo.title)
             }
             Section {
-                Button("Submit") {}
+                Button("Submit") {
+                    navigationModel.path.removeLast()
+                }
             }
         }
         .navigationTitle("Create New ToDo")
