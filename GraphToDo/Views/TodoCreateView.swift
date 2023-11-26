@@ -13,8 +13,34 @@ struct TodoCreateView: View {
     
     var body: some View {
         Form {
-            Section {
+            Section(header: Text("Info")) {
                 TextField("Title", text: $todo.title)
+                TextEditor(text: $todo.description)
+                    .frame(minHeight: 100)
+            }
+            Section(header: Text("Graph")) {
+                VStack {
+                    Slider(
+                        value: $todo.x,
+                        in: -20...20
+                    )
+                    HStack {
+                        Text("Priority")
+                        Spacer()
+                        Text("\(Int(todo.x))")
+                    }
+                }
+                VStack {
+                    Slider(
+                        value: $todo.y,
+                        in: -20...20
+                    )
+                    HStack {
+                        Text("Important")
+                        Spacer()
+                        Text("\(Int(todo.y))")
+                    }
+                }
             }
             Section {
                 Button("Submit") {
