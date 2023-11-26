@@ -8,9 +8,9 @@
 import Foundation
 
 struct TodoInput {
-    var title: String
+    var title: String = ""
+    var description: String = ""
     
-    init() {
-        self.title = ""
-    }
+    var x: Float = 0
+    var y: Float = 0
 }
