@@ -10,6 +10,8 @@
 		2C37CD2C2B00CE410020630D /* GraphToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37CD2B2B00CE410020630D /* GraphToDoApp.swift */; };
 		2C37CD302B00CE420020630D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C37CD2F2B00CE420020630D /* Assets.xcassets */; };
 		2C37CD332B00CE420020630D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C37CD322B00CE420020630D /* Preview Assets.xcassets */; };
+		2C8053E02B1407BC00AB8329 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 2C8053DF2B1407BC00AB8329 /* Apollo */; };
+		2C8789D72B1373F6002B3CFA /* ApolloClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8789D62B1373F6002B3CFA /* ApolloClientModel.swift */; };
 		2C8E97BF2B0102F9006B4271 /* ScatterChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8E97BE2B0102F9006B4271 /* ScatterChartView.swift */; };
 		2CA7DA142B0594E800E28B33 /* TodoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA7DA132B0594E800E28B33 /* TodoCardView.swift */; };
 		2CA7DA162B05AC2A00E28B33 /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA7DA152B05AC2A00E28B33 /* TodosView.swift */; };
@@ -23,6 +25,7 @@
 		2C37CD2B2B00CE410020630D /* GraphToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphToDoApp.swift; sourceTree = "<group>"; };
 		2C37CD2F2B00CE420020630D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C37CD322B00CE420020630D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C8789D62B1373F6002B3CFA /* ApolloClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClientModel.swift; sourceTree = "<group>"; };
 		2C8E97BE2B0102F9006B4271 /* ScatterChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatterChartView.swift; sourceTree = "<group>"; };
 		2CA7DA132B0594E800E28B33 /* TodoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCardView.swift; sourceTree = "<group>"; };
 		2CA7DA152B05AC2A00E28B33 /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8053E02B1407BC00AB8329 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,7 @@
 			children = (
 				2CA7DA1C2B05F2D000E28B33 /* Todo.swift */,
 				2CA984C82B11A700009C7207 /* NavigationModel.swift */,
+				2C8789D62B1373F6002B3CFA /* ApolloClientModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -114,6 +119,9 @@
 			dependencies = (
 			);
 			name = GraphToDo;
+			packageProductDependencies = (
+				2C8053DF2B1407BC00AB8329 /* Apollo */,
+			);
 			productName = GraphToDo;
 			productReference = 2C37CD282B00CE410020630D /* GraphToDo.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +150,9 @@
 				Base,
 			);
 			mainGroup = 2C37CD1F2B00CE410020630D;
+			packageReferences = (
+				2C8053DE2B1407BC00AB8329 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 2C37CD292B00CE410020630D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA7DA142B0594E800E28B33 /* TodoCardView.swift in Sources */,
+				2C8789D72B1373F6002B3CFA /* ApolloClientModel.swift in Sources */,
 				2CA7DA1D2B05F2D000E28B33 /* Todo.swift in Sources */,
 				2C8E97BF2B0102F9006B4271 /* ScatterChartView.swift in Sources */,
 				2C37CD2C2B00CE410020630D /* GraphToDoApp.swift in Sources */,
@@ -380,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C8053DE2B1407BC00AB8329 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C8053DF2B1407BC00AB8329 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C8053DE2B1407BC00AB8329 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C37CD202B00CE410020630D /* Project object */;
 }
